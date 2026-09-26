@@ -2,13 +2,11 @@ package dev.homka.risendeath.custom;
 
 import dev.homka.risendeath.AllAttachments;
 import dev.homka.risendeath.RiseAndDeath;
-import dev.homka.risendeath.item.AllModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
-import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 
 @EventBusSubscriber(modid = RiseAndDeath.MODID)
 public class HealthControlEvents {
@@ -49,6 +47,7 @@ public class HealthControlEvents {
         }
     }
 
+    /*
     @SubscribeEvent
     public static void playerUsesCursedHearth(PlayerInteractEvent.RightClickItem event) {
         if (!event.getItemStack().is(AllModItems.CURSED_HEART.get())) return;
@@ -65,10 +64,10 @@ public class HealthControlEvents {
 
             //DEBUG
             serverPlayer.sendSystemMessage(
-                    Component.literal("custom_health: " + currentPlayerHealth + " -> " + newPlayerHealth)
+                    Component.literal("custom_health: " + currentPlayerHealth + " -> " + newPlayerHealth), true
             );
         }
-    }
+    }*/
 
     @SubscribeEvent
     public static void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {

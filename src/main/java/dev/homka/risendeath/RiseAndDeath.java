@@ -1,6 +1,5 @@
 package dev.homka.risendeath;
 
-import dev.homka.risendeath.item.AllModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
