@@ -4,22 +4,43 @@ import java.util.List;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.ModConfigSpec;
 
-// An example config class. This is not required, but it's a good idea to have one to keep your config organized.
-// Demonstrates how to use Neo's config APIs
+
+// СДЕЛАТЬ КОРРЕКЦИЮ У МИН И МАКС !!!
+//
+
 public class Config {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
-    public static final ModConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
+    /*public static final ModConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
             .comment("Whether to log the dirt block on common setup")
-            .define("logDirtBlock", true);
+            .define("logDirtBlock", true);*/
 
-    public static final ModConfigSpec.IntValue MAGIC_NUMBER = BUILDER
-            .comment("A magic number")
-            .defineInRange("magicNumber", 42, 0, Integer.MAX_VALUE);
+    public static final ModConfigSpec.DoubleValue MIN_HEALTH = BUILDER
+            .comment("A minimum health. Must be smaller then maxHealth")
+            .defineInRange("minHealth", 6.0, 1.0, Double.MAX_VALUE);
 
-    public static final ModConfigSpec.ConfigValue<String> MAGIC_NUMBER_INTRODUCTION = BUILDER
+
+    public static final ModConfigSpec.DoubleValue MAX_HEALTH = BUILDER
+            .comment("A maximum health. Must be greater then minHealth")
+            .defineInRange("maxHealth", 40.0, 2.0, Double.MAX_VALUE);
+
+    public static final ModConfigSpec.DoubleValue BONUS_HEALTH = BUILDER
+            .comment("A bonus health per item")
+            .defineInRange("bonusHealth", 2.0, 1.0, Double.MAX_VALUE);
+
+    public static final ModConfigSpec.DoubleValue DEATH_PENALITY = BUILDER
+            .comment("A health penality per death or item")
+            .defineInRange("deathPenality", 2.0, 1.0, Double.MAX_VALUE);
+
+    //каждую N смерть у нас будут отбтрать хп...
+    public static final ModConfigSpec.IntValue DEATH_COUNT = BUILDER
+            .comment("Each N death will be punished")
+            .defineInRange("deathCount", 2, 1, Integer.MAX_VALUE);
+
+    /*public static final ModConfigSpec.ConfigValue<String> MAGIC_NUMBER_INTRODUCTION = BUILDER
             .comment("What you want the introduction message to be for the magic number")
             .define("magicNumberIntroduction", "The magic number is... ");
 
@@ -28,9 +49,13 @@ public class Config {
             .comment("A list of items to log on common setup.")
             .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), () -> "", Config::validateItemName);
 
+
+     */
     static final ModConfigSpec SPEC = BUILDER.build();
 
+    /*
     private static boolean validateItemName(final Object obj) {
         return obj instanceof String itemName && BuiltInRegistries.ITEM.containsKey(ResourceLocation.parse(itemName));
     }
+    */
 }
