@@ -36,8 +36,10 @@ public class RiseAndDeath {
         NeoForge.EVENT_BUS.register(this);
 
         // Регистрируем нужные штуки
-        AllModItems.register(modEventBus);
+        AllItems.register(modEventBus);
         AllAttachments.register(modEventBus);
+        // а здесь без доп метода внутри всех частиц
+        AllParticleTypes.PARTICLE_TYPES.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -53,7 +55,8 @@ public class RiseAndDeath {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(AllModItems.CURSED_HEART);
+            event.accept(AllItems.CURSED_HEART);
+            event.accept(AllItems.HEART_CRYSTAL);
         }
     }
 
