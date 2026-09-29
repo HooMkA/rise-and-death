@@ -5,6 +5,7 @@ import java.util.List;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.ModConfigSpec;
 
 
@@ -17,6 +18,10 @@ public class Config {
     /*public static final ModConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
             .comment("Whether to log the dirt block on common setup")
             .define("logDirtBlock", true);*/
+
+    public static final ModConfigSpec.BooleanValue KEEP_INVENTORY = BUILDER
+            .comment("On keep inventory, through config \n If true it will overwrite commands")
+            .define("keepInventory",true);
 
     public static final ModConfigSpec.DoubleValue MIN_HEALTH = BUILDER
             .comment("A minimum health. Must be smaller then maxHealth")
