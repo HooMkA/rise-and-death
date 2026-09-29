@@ -23,3 +23,15 @@ Additional Resources:
 ==========
 Community Documentation: https://docs.neoforged.net/  
 NeoForged Discord: https://discord.neoforged.net/
+
+
+## License
+
+- **Code:** licensed under [GPL-3.0](LICENSE).
+- **Assets:** some assets in this project are based on
+  [Matcha Flavoured](https://modrinth.com/datapack/matcha-flavoured)
+  by [kleiwright](https://github.com/kleiwright/matcha-flavoured),
+  licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+  Changes were made: <briefly describe what you modified>.
+  These assets are NOT covered by the GPL-3.0 code license and remain under CC BY-NC-SA 4.0.
+  Modified versions of them are distributed under the same license.
