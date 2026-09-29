@@ -1,4 +1,11 @@
 {
   "item.risendeath.cursed_heart": "Cursed Heart",
-  "item.risendeath.heart_crystal": "Crystal Heart"
+  "item.risendeath.heart_container": "Crystal Heart",
+
+  "risendeath.configuration.keepInventory": "Keep Inventory True",
+  "risendeath.configuration.minHealth": "Minimum Health",
+  "risendeath.configuration.maxHealth": "Maximum Health",
+  "risendeath.configuration.bonusHealth": "Bonus Health",
+  "risendeath.configuration.deathPenality": "Death Penality",
+  "risendeath.configuration.deathCount": "Death Count to lose Health"
 }

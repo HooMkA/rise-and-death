@@ -1,0 +1,11 @@
+{
+  "item.risendeath.cursed_heart": "Пагубное Сердце",
+  "item.risendeath.heart_container": "Сердечный Сосудъ",
+
+  "risendeath.configuration.keepInventory": "Сохраненіе инвентаря",
+  "risendeath.configuration.minHealth": "Минимальное Здоровье",
+  "risendeath.configuration.maxHealth": "Максимальное Здоровье",
+  "risendeath.configuration.bonusHealth": "Бонусъ къ Здоровью",
+  "risendeath.configuration.deathPenality": "Наказаніе за Смерть",
+  "risendeath.configuration.deathCount": "Количество Смертей для Наказанія"
+}

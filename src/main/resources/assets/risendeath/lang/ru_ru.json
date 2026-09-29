@@ -1,4 +1,11 @@
 {
   "item.risendeath.cursed_heart": "Проклятое Сердце",
-  "item.risendeath.heart_crystal": "Кристальное Сердце"
+  "item.risendeath.heart_container": "Кристальное Сердце",
+
+  "risendeath.configuration.keepInventory": "Keep Inventory True",
+  "risendeath.configuration.minHealth": "Минимальное Здоровье",
+  "risendeath.configuration.maxHealth": "Максимальное Здоровье",
+  "risendeath.configuration.bonusHealth": "Бонус к Здоровью",
+  "risendeath.configuration.deathPenality": "Наказание за Смерть",
+  "risendeath.configuration.deathCount": "Количество Смертей для Наказания"
 }
