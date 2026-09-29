@@ -13,7 +13,7 @@ public class AllItems {
             () -> new HealthManipulationItem(new Item.Properties(), false));
 
 
-    public static final DeferredItem<Item> HEART_CRYSTAL = ITEMS.register("heart_crystal",
+    public static final DeferredItem<Item> HEART_CONTAINER = ITEMS.register("heart_container",
             () -> new HealthManipulationItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

@@ -56,7 +56,7 @@ public class RiseAndDeath {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(AllItems.CURSED_HEART);
-            event.accept(AllItems.HEART_CRYSTAL);
+            event.accept(AllItems.HEART_CONTAINER);
         }
     }
 

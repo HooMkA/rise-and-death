@@ -4,7 +4,6 @@ import dev.homka.risendeath.AllAttachments;
 import dev.homka.risendeath.AllParticleTypes;
 import dev.homka.risendeath.Config;
 import dev.homka.risendeath.custom.HealthAttributeSync;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -71,7 +70,7 @@ public class HealthManipulationItem extends Item {
             if (level instanceof ServerLevel serverLevel) {
                 // через лямбда выражение выбираем какие частицы нужны
                 SimpleParticleType particleType = addingHealth
-                        ? AllParticleTypes.HEART_CRYSTAL_BURST.get()
+                        ? AllParticleTypes.HEART_CONTAINER_BURST.get()
                         : AllParticleTypes.CURSED_HEART_BURST.get();
 
                 spawnBurstParticles(serverLevel, player, particleType);

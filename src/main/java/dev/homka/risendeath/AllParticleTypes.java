@@ -14,7 +14,7 @@ public class AllParticleTypes {
     public static final DeferredHolder<ParticleType<?>, SimpleParticleType> CURSED_HEART_BURST =
         PARTICLE_TYPES.register("cursed_heart_burst", () -> new SimpleParticleType(false));
 
-    public static final DeferredHolder<ParticleType<?>, SimpleParticleType> HEART_CRYSTAL_BURST =
-            PARTICLE_TYPES.register("heart_crystal_burst", () -> new SimpleParticleType(false));
+    public static final DeferredHolder<ParticleType<?>, SimpleParticleType> HEART_CONTAINER_BURST =
+            PARTICLE_TYPES.register("heart_container_burst", () -> new SimpleParticleType(false));
 
 }

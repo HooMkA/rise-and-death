@@ -11,7 +11,7 @@ public class ClientParticleEvents {
 
     @SubscribeEvent
     public static void registerParticleProviders(RegisterParticleProvidersEvent event) {
-        event.registerSpriteSet(AllParticleTypes.HEART_CRYSTAL_BURST.get(), HeartRingParticle.Provider::new);
+        event.registerSpriteSet(AllParticleTypes.HEART_CONTAINER_BURST.get(), HeartRingParticle.Provider::new);
         event.registerSpriteSet(AllParticleTypes.CURSED_HEART_BURST.get(), HeartRingParticle.Provider::new);
     }
 
