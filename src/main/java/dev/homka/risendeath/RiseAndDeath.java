@@ -55,8 +55,9 @@ public class RiseAndDeath {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(AllItems.CURSED_HEART);
+            event.accept(AllItems.CURSED_HEART.get());
             event.accept(AllItems.HEART_CONTAINER);
+            event.accept(AllItems.HEART_FRAGMENT.get());
         }
     }
 

@@ -16,6 +16,9 @@ public class AllItems {
     public static final DeferredItem<Item> HEART_CONTAINER = ITEMS.register("heart_container",
             () -> new HealthManipulationItem(new Item.Properties()));
 
+    public static final DeferredItem<Item> HEART_FRAGMENT = ITEMS.register("heart_fragment",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -1,6 +1,7 @@
 {
   "item.risendeath.cursed_heart": "Проклятое Сердце",
   "item.risendeath.heart_container": "Кристальное Сердце",
+  "item.risendeath.heart_fragment": "Кристальный Фрагмент",
 
   "risendeath.configuration.keepInventory": "Keep Inventory True",
   "risendeath.configuration.minHealth": "Минимальное Здоровье",

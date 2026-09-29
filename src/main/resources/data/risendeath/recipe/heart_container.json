@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": { "item": "risendeath:heart_fragment" },
+    "B": { "item": "minecraft:diamond" }
+  },
+  "result": {
+    "id": "risendeath:heart_container",
+    "count": 1
+  }
+}
