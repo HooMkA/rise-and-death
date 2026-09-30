@@ -1,6 +1,7 @@
 package dev.homka.risendeath.client;
 
 import dev.homka.risendeath.AllParticleTypes;
+import dev.homka.risendeath.client.animations.HeartRingParticle;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

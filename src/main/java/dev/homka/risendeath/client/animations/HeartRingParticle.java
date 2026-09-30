@@ -1,4 +1,4 @@
-package dev.homka.risendeath.client;
+package dev.homka.risendeath.client.animations;
 
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;
